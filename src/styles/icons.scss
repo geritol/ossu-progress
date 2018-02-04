@@ -1,0 +1,71 @@
+
+// Define vars we'll be using
+$loader-size: 1em;
+$check-height: $loader-size/2;
+$check-width: $check-height/2;
+$check-left: ($loader-size/6 );
+$check-thickness: 2px;
+$done-color: #5cb85c;
+$doing-color: rgb(209, 186, 84);
+$todo-color: rgb(110, 110, 110);
+
+.status {
+  border: $check-thickness solid;
+  position: relative;
+  display: inline-block;
+	vertical-align: top;
+	margin: 0 auto;
+}
+
+.status,
+.status:after{
+	border-radius: 50%;
+}
+
+.status.done,
+.status.done:after {
+	margin-top: 4px;
+  width: $loader-size;
+	height: $loader-size;
+	border-color: $done-color;
+}
+
+.status.doing,
+.status.doing:after {
+	margin-top: 7px;
+	margin-left: 2px;
+	width: $loader-size / 1.3;
+	height: $loader-size /1.3;
+	border-color: $doing-color;
+	background-color: $doing-color;
+}
+
+.status.todo,
+.status.todo:after {
+	margin-top: 7px;
+	margin-left: 2px;
+  width: $loader-size / 1.3;
+	height: $loader-size /1.3;
+	border-color: $todo-color;
+	background-color: $todo-color;
+}
+
+.checkmark {
+  
+  &.draw:after {
+    transform: scaleX(-1) rotate(135deg);
+  }
+  
+  &:after {
+    opacity: 1;
+    height: $check-height;
+    width: $check-width;
+    transform-origin: left top;
+    border-right: $check-thickness solid $done-color;
+    border-top: $check-thickness solid $done-color;
+    content: '';
+    left: $check-left;
+    top: $check-height;
+    position: absolute;
+  }
+}
