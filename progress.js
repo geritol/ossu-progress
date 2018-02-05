@@ -7,12 +7,12 @@ var progress = [
 		{
 			name: 'Introduction to Computer Science - CS50',
 			url: 'https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!',
-			status: 'done'
+			status: 'todo'
 		},
 		{
 			name: 'Introduction to Computer Science and Programming using Python',
 			url: 'https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-10',
-			status: 'done'
+			status: 'todo'
 		}
 	]},
 	{
@@ -24,7 +24,7 @@ var progress = [
 					{
 						name: 'How to Code - Simple Data',
 						url: 'https://www.edx.org/course/how-code-simple-data-ubcx-htc1x',
-						status: 'doing'
+						status: 'todo'
 					},
 					{
 						name: 'How to Code - Complex Data',
@@ -44,17 +44,17 @@ var progress = [
 					{
 						name: 'Programming Languages, Part A',
 						url: 'https://www.coursera.org/learn/programming-languages',
-						status: 'done'
+						status: 'todo'
 					},
 					{
 						name: 'Programming Languages, Part B',
 						url: 'https://www.coursera.org/learn/programming-languages-part-b',
-						status: 'done'
+						status: 'todo'
 					},
 					{
 						name: 'Programming Languages, Part C',
 						url: 'https://www.coursera.org/learn/programming-languages-part-c',
-						status: 'done'
+						status: 'todo'
 					},
 				]
 			},
@@ -74,7 +74,7 @@ var progress = [
 					{
 						name: 'Calculus One',
 						url: 'https://www.coursera.org/learn/calculus1',
-						status: 'done'
+						status: 'todo'
 					},
 					{
 						name: 'Calculus Two: Sequences and Series',
@@ -119,7 +119,7 @@ var progress = [
 					{
 						name: 'Algorithms: Design and Analysis, Part I',
 						url: 'https://lagunita.stanford.edu/courses/course-v1:Engineering+Algorithms1+SelfPaced/about',
-						status: 'done'
+						status: 'todo'
 					},
 					{
 						name: 'Algorithms: Design and Analysis, Part II',
@@ -134,7 +134,7 @@ var progress = [
 					{
 						name: 'Databases',
 						url: 'https://lagunita.stanford.edu/courses/DB/2014/SelfPaced/about',
-						status: 'done'
+						status: 'todo'
 					},
 					{
 						name: 'Machine Learning',
