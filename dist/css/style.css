@@ -46,6 +46,10 @@ a {
   padding: 0 5px 0 5px;
   margin-bottom: 3px; }
 
+.creator {
+  margin-top: 30px;
+  text-align: right; }
+
 ul#ossu, ul#ossu ul {
   list-style: none;
   margin: 0;
