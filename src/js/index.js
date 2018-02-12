@@ -2,26 +2,26 @@
 
 (function render(){
 	progress.forEach(function renderCategory(category){
-		document.getElementById('ossu').innerHTML += createCategoryOutput(category) 
+		document.getElementById('ossu').innerHTML += createCategoryOutput(category);
 	})
-})()
+})();
 
 function createCategoryOutput(category){
 	var content = `<li><h3>${category.name}</h3>`;
 	if(category.categories){
-		content += '<ul>'
+		content += '<ul>';
 		category.categories.forEach(function(category){
 			content += createCategoryOutput(category);
 		});
-		content += '</ul>'
+		content += '</ul>';
 	}else if(category.courses){
-		content += '<ul>'
+		content += '<ul>';
 		category.courses.forEach(function(course){
 			content += createCourseOutput(course);
 		})
-		content += '</ul>'
+		content += '</ul>';
 	}
-	content += '</li>'
+	content += '</li>';
 	return content 
 }
 
