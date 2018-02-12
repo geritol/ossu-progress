@@ -4,7 +4,6 @@
 	progress.forEach(function renderCategory(category){
 		document.getElementById('ossu').innerHTML += createCategoryOutput(category) 
 	})
-	console.log('hello')
 })()
 
 function createCategoryOutput(category){
