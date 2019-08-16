@@ -26,6 +26,8 @@ Run `npm run build`
 > Note: the `build` script assumes that you will deploy it in the root of your site.  
 > To deploy it in a subfolder use `npm run build-subfolder` (replace the part after `--public-url` with your subfolder name)
 
+> Tip: to try it out locally run `npx serve dist`
+
 Deploy `./dist` to a static server.
 
 ## Development
