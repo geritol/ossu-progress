@@ -1,5 +1,5 @@
 const fs = require("fs");
-const progress = require("../../progress.json");
+const progress = require("../progress.json");
 
 const TEMPATE_LOCATION = "dist/index.html";
 
