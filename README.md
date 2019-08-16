@@ -19,6 +19,7 @@ Use the following statuses:
 Add your name and contact info to `./index.html`.
 
 Run `npm run build`
+Note: the `build` script assumes that you will deploy it in the root of your site to deploy it in a subfolder use `npm run build-subfolder` (replace the part after `--public-url` with your subfolder name)
 
 Deploy `./dist` to a static server.
 
