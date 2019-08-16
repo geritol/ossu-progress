@@ -1,12 +1,27 @@
-"use strict";
+const fs = require("fs");
+const progress = require("../../progress.json");
 
-(function render() {
+const TEMPATE_LOCATION = "dist/index.html";
+
+fs.readFile(TEMPATE_LOCATION, "utf8", function(err, template) {
+  if (err) {
+    console.error(`Failed to read ${TEMPATE_LOCATION} \n TIP: run 'npm build'`);
+  }
+  const courseProgress = __createCourseProgress();
+  const htmlToRender = template.replace(
+    /<ul\s+id="ossu">[\S\s]*?<\/ul>/gi,
+    '<ul id="ossu">' + courseProgress + "</ul>"
+  );
+  fs.writeFileSync(TEMPATE_LOCATION, htmlToRender);
+});
+
+function __createCourseProgress() {
+  let courseProgress = "";
   progress.forEach(function renderCategory(category) {
-    document.getElementById("ossu").innerHTML += _createCategoryOutput(
-      category
-    );
+    courseProgress += _createCategoryOutput(category);
   });
-})();
+  return courseProgress;
+}
 
 function _createCategoryOutput(category) {
   var content = `<li><h3>${category.name}</h3>`;
