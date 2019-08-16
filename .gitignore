@@ -62,3 +62,5 @@ typings/
 .cache
 dist
 .DS_Store
+src/index.html
+src/progress.json

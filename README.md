@@ -9,6 +9,9 @@ Preview [here](https://geritol.github.io/ossu).
 
 ## Usage
 
+Copy `src/index.html.example` to `src/index.html`  
+and `src/progress.json.example` to `src/progress.json`
+
 Alter `progress.js` to reflect your current progress with the course.  
 Use the following statuses:
 
@@ -19,7 +22,9 @@ Use the following statuses:
 Add your name and contact info to `./index.html`.
 
 Run `npm run build`
-Note: the `build` script assumes that you will deploy it in the root of your site to deploy it in a subfolder use `npm run build-subfolder` (replace the part after `--public-url` with your subfolder name)
+
+> Note: the `build` script assumes that you will deploy it in the root of your site.  
+> To deploy it in a subfolder use `npm run build-subfolder` (replace the part after `--public-url` with your subfolder name)
 
 Deploy `./dist` to a static server.
 
